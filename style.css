@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color1:hsl(31, 77%, 52%);
+    --primary-color2: hsl(184, 100%, 22%);
+    --primary-color3:hsl(179, 100%, 13%);
+    --natural-color1:hsla(0, 0%, 100%, 0.75);
+    --natural-color2:hsl(0, 0%, 95%);
+}
+.container{
+    background-color: antiquewhite;
+    display: flex;
+    
+}
+.click{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+
+}
+.car-type{
+ color:var(--natural-color2);
+ font-size: 30px;
+ font-family: "Big Shoulders Display", sans-serif;
+ font-weight: 400;
+ display: flex;
+ justify-content: center;
+ padding-top: 20px;
+ text-transform: uppercase;
+
+}
+.desc{
+ color:var(--natural-color1);
+ font-size: 15px;
+ padding-top:50px;
+ text-align: center;
+}
+.car-1{
+    width:40%;
+    height:500px;
+    background-color:var(--primary-color1);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top:20px;
+    margin-left: 20px;
+}
+.car-2{
+    width:40%;
+    height:500px;
+    background-color:var(--primary-color2);
+    margin-top:20px;
+}
+.car-3{
+    width:40%;
+    height:500px;
+    background-color:var(--primary-color3);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top:20px;
+    margin-right: 20px;
+}
+
+
