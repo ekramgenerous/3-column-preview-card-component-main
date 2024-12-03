@@ -10,6 +10,13 @@
     --natural-color1:hsla(0, 0%, 100%, 0.75);
     --natural-color2:hsl(0, 0%, 95%);
 }
+@media (min-width:320px)and(max-width:375px){
+    .container{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
+}
 .container{
     background-color: antiquewhite;
     display: flex;
@@ -18,28 +25,73 @@
 .click{
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
+    background-color: var(--natural-color2);
+    width:50%;
+    height:50px;
+    border-radius:40px;
+    border: 2px solid var(--natural-color2);
+    margin-top:40px;
+    margin-left: 40px;
 
+}
+.c-1 {
+ color:var(--primary-color1)
+}
+.c-1:hover{
+    background-color: var(--primary-color1);
+    color:var(--natural-color2);
+    cursor: pointer;
+}
+.c-2 {
+ color:var(--primary-color2)
+}
+.c-2:hover{
+    background-color: var(--primary-color2);
+    color:var(--natural-color2);
+    cursor: pointer;
+}
+.c-3 {
+ color:var(--primary-color3)
+}
+.c-3:hover{
+    background-color: var(--primary-color3);
+    color:var(--natural-color2);
+    cursor: pointer;
 }
 .car-type{
  color:var(--natural-color2);
- font-size: 30px;
+ font-size: 40px;
  font-family: "Big Shoulders Display", sans-serif;
  font-weight: 400;
  display: flex;
- justify-content: center;
- padding-top: 20px;
+ justify-content: flex-start;
+ padding-top: 50px;
+ padding-left:40px;
  text-transform: uppercase;
 
 }
-.desc{
+.desc,.desc-{
  color:var(--natural-color1);
  font-size: 15px;
  padding-top:50px;
- text-align: center;
+ padding-left:40px;
+ font-family: "Lexend Deca", sans-serif;
+ font-weight: 400;
+
 }
-.car-1{
+.desc-{
+    padding-top:47px;
+    padding-left:40px
+}
+img {
+    padding-top: 50px;
+    padding-left:40px;
+}
+.car-1,.car-2,.car-3{
     width:40%;
     height:500px;
+}
+.car-1{
     background-color:var(--primary-color1);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -47,14 +99,10 @@
     margin-left: 20px;
 }
 .car-2{
-    width:40%;
-    height:500px;
     background-color:var(--primary-color2);
     margin-top:20px;
 }
 .car-3{
-    width:40%;
-    height:500px;
     background-color:var(--primary-color3);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -62,4 +110,7 @@
     margin-right: 20px;
 }
 
+@media (max-width:1440px) {
+   
+}
 
